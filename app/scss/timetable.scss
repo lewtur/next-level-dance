@@ -1,0 +1,36 @@
+@import "branding";
+
+.portfolio-section {
+  .portfolio-carousel {
+    margin-bottom: 2rem;
+
+    .carousel-indicators {
+      li {
+        background-color: $text-color;
+      }
+      .active {
+        background-color: $color-primary;
+      }
+    }
+
+    .carousel-item {
+      padding-bottom: 2rem;
+    }
+
+    .portfolio-image {
+      margin-bottom: 3rem;
+    }
+
+    .portfolio-description {
+      h4 {
+        margin-bottom: 1rem;
+      }
+
+      .portfolio-link {
+        margin-bottom: 2rem;
+        text-transform: uppercase;
+        font-size: 0.8rem;
+      }
+    }
+  }
+}

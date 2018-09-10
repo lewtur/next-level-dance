@@ -1,0 +1,30 @@
+@import "branding";
+
+.recommendations-section {
+  background-color: $background-color-2;
+
+  .card {
+    -webkit-box-shadow: 0 1px 6px rgba(0, 0, 0, 0.175);
+    box-shadow: 0 1px 6px rgba(0, 0, 0, 0.175);
+    margin-bottom: 3rem;
+  }
+
+  .person {
+    display: flex;
+    margin-top: 2rem;
+
+    .job-title {
+      color: $text-color;
+    }
+
+    h4 {
+      margin-bottom: 0.5rem;
+    }
+
+    img {
+      border-radius: 100%;
+      height: 50px;
+      margin-right: 1.5rem;
+    }
+  }
+}
