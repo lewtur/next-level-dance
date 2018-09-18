@@ -1,4 +1,36 @@
 @import "branding";
 
 .contact-section {
+    color: white;
+    background-image: linear-gradient(to bottom, rgba(0,0,0,0.6) 0%,rgba(0,0,0,0.9) 100%), url(../images/img-8.jpeg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: 0 65px;
+
+    .contact-info {
+        padding-top: 2rem;
+
+        a {
+            vertical-align: super;
+            padding-left: 1rem;
+            
+            &, &:visited {
+                color: $color-primary;
+            }
+        }
+    }
+
+    .address {
+        padding-top: 2rem;
+        text-align: right;
+
+        .address-line {
+            padding-bottom: 0.6rem;
+        }
+    }
+
+    #map {
+        margin-top: 2rem;
+    }
 }

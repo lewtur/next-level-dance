@@ -1,13 +1,6 @@
 @import "branding";
 
-.profile-section {
-  .skill-progress {
-    margin-bottom: 1.5rem;
-    height: 0.5rem;
-
-    .skill-progress-bar {
-      background-color: $color-primary;
-      transition: width 1.5s ease;
-    }
-  }
+img {
+  max-height: 400px;
+  max-width: 400px;
 }
