@@ -47,21 +47,9 @@ h4 {
 }
 
 section {
-  padding: 6rem 0 3rem 0;
+  padding: 3rem 0 3rem 0;
 }
 
-a {
-  transition: all 0.2s ease-in-out;
-  color: $color-primary;
-  text-decoration: none;
-
-  &:visited {
-    color: $color-primary;
-  }
-
-  &:hover,
-  &:active {
-    color: darken($color-primary, 15%);
-    text-decoration: none;
-  }
+p {
+  font-size: 1.2rem;
 }

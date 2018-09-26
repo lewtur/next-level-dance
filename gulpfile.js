@@ -21,7 +21,7 @@ var paths = {
 paths.scss = paths.app + "scss/**/*.scss";
 paths.html = paths.app + "*.html";
 paths.js = paths.app + "js/**/*.js";
-paths.images = paths.app + "images/**/*.+(png|jpg|gif|svg)";
+paths.images = paths.app + "images/**/*.+(png|jpg|gif|svg||jpeg)";
 paths.css = paths.app + "css";
 
 paths.imageOutput = paths.dist + "/images";

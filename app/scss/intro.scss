@@ -71,20 +71,18 @@
 }
 
 .intro-section {
-
   background: url(../images/backdrop.jpg);
   background-repeat: no-repeat;
   background-attachment: fixed;
   height: 100%;
-  background-size: contain;
-  background-position: 0 65px;
+  background-position: -388px 55px;
+    background-size: cover;
   display: flex;
   flex-direction: column;
   justify-content: center;
 
-  .logo-tagline {
-    color: #bdbdbd;
-    font-size: 1.9rem;
+  img {
+    width: 70%;
   }
 }
 

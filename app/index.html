@@ -11,8 +11,8 @@
     <!--build:css css/site.min.css-->
     <link rel="stylesheet" href="css/site.css">
     <link rel="stylesheet" href="css/nav.css">
-    <link rel="stylesheet" href="css/loader.css">
     <link rel="stylesheet" href="css/intro.css">
+    <link rel="stylesheet" href="css/loader.css">
     <link rel="stylesheet" href="css/about.css">
     <link rel="stylesheet" href="css/timetable.css">
     <link rel="stylesheet" href="css/gallery.css">
@@ -26,6 +26,9 @@
         crossorigin="anonymous">
 
     <link href="https://fonts.googleapis.com/css?family=Open+Sans|Montserrat:400,700" rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick.css" />
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick-theme.css" />
 </head>
 
 <body data-spy="scroll" data-target="#main-nav">
@@ -67,7 +70,8 @@
     </nav>
 
     <section id="intro" class="intro-section">
-        <div class="container">
+        <div class="container text-center">
+            <div class="logo"><img src="./images/logo-green.png"></div>
         </div>
         <a href="#profile" class="mouse-icon">
             <div class="wheel"></div>
@@ -103,6 +107,7 @@
     <section id="timetable" class="timetable-section">
         <div class="container">
             <h1>CLASS TIMETABLES</h1>
+            <p>Click <a href="./assets/timetable.pdf" target="_blank">here</a> to download the timetable.</p>
         </div>
     </section>
 
@@ -110,21 +115,76 @@
         <div class="container">
             <h1>GALLERY</h1>
 
-            <!-- <div class="carousel">
-                <img src="./images/img-1.jpeg" />
-                <img src="./images/img-2.jpeg" />
-                <img src="./images/img-3.jpeg" />
-                <img src="./images/img-4.jpeg" />
-                <img src="./images/img-5.jpeg" />
-                <img src="./images/img-6.jpeg" />
-                <img src="./images/img-7.jpeg" />
-                <img src="./images/img-8.jpeg" />
-                <img src="./images/img-9.jpeg" />
-                <img src="./images/img-10.jpeg" />
-                <img src="./images/img-11.jpeg" />
-                <img src="./images/img-12.jpeg" />
-                <img src="./images/img-13.jpeg" />
-            </div> -->
+            <div class="slider text-center">
+                <div data-index="1">
+                    <img src="./images/img-1.jpeg" />
+                    <figcaption>Some of our Cheerleaders performing at a celebrity football match.</figcaption>
+                </div>
+                <div data-index="2">
+                    <img src="./images/img-2.jpeg" />
+                    <figcaption>Next Level Phunk European streetcheer champions 2016.</figcaption>
+                </div>
+                <div data-index="3">
+                    <img src="./images/img-3.jpeg" />
+                    <!-- <figcaption>Caption for image three.</figcaption> -->
+                </div>
+                <div data-index="4">
+                    <img src="./images/img-4.jpeg" />
+                    <figcaption>Our student performing on stage with Justin Bieber on his Purpose tour.</figcaption>
+                </div>
+                <div data-index="5">
+                    <img src="./images/img-5.jpeg" />
+                    <figcaption>Our Little Stars clowning around before their showcase performance.</figcaption>
+                </div>
+                <div data-index="6">
+                    <img src="./images/img-6.jpeg" />
+                    <!-- <figcaption>Caption for image six.</figcaption> -->
+                </div>
+                <div data-index="7">
+                    <img src="./images/img-7.jpeg" />
+                    <figcaption>Some of our cheerleaders performing on a Burnley football club match.</figcaption>
+                </div>
+                <div data-index="8">
+                    <img src="./images/img-8.jpeg" />
+                    <!-- <figcaption>Caption for image eight.</figcaption> -->
+                </div>
+                <div data-index="9">
+                    <img src="./images/img-9.jpeg" />
+                    <!-- <figcaption>Caption for image nine.</figcaption> -->
+                </div>
+                <div data-index="10">
+                    <img src="./images/img-10.jpeg" />
+                    <!-- <figcaption>Caption for image ten.</figcaption> -->
+                </div>
+                <div data-index="11">
+                    <img src="./images/img-11.jpeg" />
+                    <!-- <figcaption>Caption for image eleven.</figcaption> -->
+                </div>
+                <div data-index="12">
+                    <img src="./images/img-12.jpeg" />
+                    <figcaption>Our streetdance team D-FEET third place at the UDO World streetdance championships.</figcaption>
+                </div>
+                <div data-index="13">
+                    <img src="./images/img-13.jpeg" />
+                    <figcaption>Some of our street dancers were selected to be extras for the CBBC programme “The Next Step”.</figcaption>
+                </div>
+            </div>
+
+            <div class="slider-nav-thumbnails text-center">
+                <div><img src="./images/img-1.jpeg" slide="slide_1" /></div>
+                <div><img src="./images/img-2.jpeg" slide="slide_2" /></div>
+                <div><img src="./images/img-3.jpeg" slide="slide_3" /></div>
+                <div><img src="./images/img-4.jpeg" slide="slide_4" /></div>
+                <div><img src="./images/img-5.jpeg" slide="slide_5" /></div>
+                <div><img src="./images/img-6.jpeg" slide="slide_6" /> </div>
+                <div><img src="./images/img-7.jpeg" slide="slide_7" /></div>
+                <div><img src="./images/img-8.jpeg" slide="slide_8" /> </div>
+                <div><img src="./images/img-9.jpeg" slide="slide_9" /> </div>
+                <div><img src="./images/img-10.jpeg" slide="slide_10" /></div>
+                <div><img src="./images/img-11.jpeg" slide="slide_11" /></div>
+                <div><img src="./images/img-12.jpeg" slide="slide_12" /></div>
+                <div><img src="./images/img-13.jpeg" slide="slide_13" /></div>
+            </div>
         </div>
     </section>
 
@@ -136,9 +196,14 @@
             </p>
 
             <p>
-                To book a studio for private events, meetings, classes, fitness, personal training, workshops or rehearsals 
-                please contact us by calling us on <a href="tel:+447791002518" target="_blank">+447791 002 518</a> or by 
+                To book a studio for private events, meetings, classes, fitness, personal training, workshops or
+                rehearsals
+                please contact us by calling us on <a href="tel:+447791002518" target="_blank">+447791 002 518</a> or
+                by
                 emailing <a href="mailto:lucynextleveldance@gmail.com" target="_blank">lucynextleveldance@gmail.com</a>.
+            </p>
+            <p>
+                Pictures coming soon!
             </p>
         </div>
     </section>
@@ -220,12 +285,59 @@
 
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAn58_jo1Du-eYVLR2zGa1yHYv3KitsZdQ&callback=initMap"
         async defer></script>
-    <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick.min.js"></script>
+
 
     <script>
-        $('.carousel').masonry({
-            itemSelector: 'img',
-            columnWidth: 100
+        $(document).ready(() => {
+            $('.slider').slick({
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                arrows: false,
+                fade: false,
+                asNavFor: '.slider-nav-thumbnails',
+                adaptiveHeight: true,
+                autoplay: true,
+  autoplaySpeed: 2000,
+            });
+
+            $('.slider-nav-thumbnails').slick({
+                slidesToShow: 5,
+                slidesToScroll: 1,
+                asNavFor: '.slider',
+                dots: false,
+                focusOnSelect: true,
+                responsive: [{
+                        breakpoint: 1024,
+                        settings: {
+                            slidesToShow: 3,
+                            slidesToScroll: 3
+                        }
+                    },
+                ]
+            });
+
+            //remove active class from all thumbnail slides
+            $('.slider-nav-thumbnails .slick-slide').removeClass('slick-active');
+
+            //set active class to first thumbnail slides
+            $('.slider-nav-thumbnails .slick-slide').eq(0).addClass('slick-active');
+
+            // On before slide change match active thumbnail to current slide
+            $('.slider').on('beforeChange', function (event, slick, currentSlide, nextSlide) {
+                var mySlideNumber = nextSlide;
+                $('.slider-nav-thumbnails .slick-slide').removeClass('slick-active');
+                $('.slider-nav-thumbnails .slick-slide').eq(mySlideNumber).addClass('slick-active');
+            });
+
+            //UPDATED 
+
+            $('.slider').on('afterChange', function (event, slick, currentSlide) {
+                $('.content').hide();
+                $('.content[data-id=' + (currentSlide + 1) + ']').show();
+            });
+
+
         });
     </script>
 

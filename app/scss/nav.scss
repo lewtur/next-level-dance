@@ -18,7 +18,7 @@
 
 .navbar-brand {
   font-weight: 700;
-  font-size: 1.5rem;
+  font-size: 1.115rem!important;
   letter-spacing: 0.3rem;
 }
 
@@ -26,17 +26,6 @@
   background-color: white;
   box-shadow: 0 1px 6px rgba(0, 0, 0, 0.175);
 }
-
-// .navbar-dark .navbar-nav .nav-link {
-//   color: white;
-// }
-
-// .navbar-light .navbar-nav .active > .nav-link,
-// .navbar-light .navbar-nav .nav-link.active,
-// .navbar-light .navbar-nav .nav-link.open,
-// .navbar-light .navbar-nav .open > .nav-link {
-//   color: $color-primary;
-// }
 
 @media (min-width: 992px) {
   .navbar {
