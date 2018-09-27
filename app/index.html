@@ -126,7 +126,7 @@
                 </div>
                 <div data-index="3">
                     <img src="./images/img-3.jpeg" />
-                    <!-- <figcaption>Caption for image three.</figcaption> -->
+                    <figcaption></figcaption>
                 </div>
                 <div data-index="4">
                     <img src="./images/img-4.jpeg" />
@@ -138,7 +138,7 @@
                 </div>
                 <div data-index="6">
                     <img src="./images/img-6.jpeg" />
-                    <!-- <figcaption>Caption for image six.</figcaption> -->
+                    <figcaption></figcaption>
                 </div>
                 <div data-index="7">
                     <img src="./images/img-7.jpeg" />
@@ -146,19 +146,19 @@
                 </div>
                 <div data-index="8">
                     <img src="./images/img-8.jpeg" />
-                    <!-- <figcaption>Caption for image eight.</figcaption> -->
+                    <figcaption></figcaption>
                 </div>
                 <div data-index="9">
                     <img src="./images/img-9.jpeg" />
-                    <!-- <figcaption>Caption for image nine.</figcaption> -->
+                    <figcaption></figcaption>
                 </div>
                 <div data-index="10">
                     <img src="./images/img-10.jpeg" />
-                    <!-- <figcaption>Caption for image ten.</figcaption> -->
+                    <figcaption></figcaption>
                 </div>
                 <div data-index="11">
                     <img src="./images/img-11.jpeg" />
-                    <!-- <figcaption>Caption for image eleven.</figcaption> -->
+                    <figcaption></figcaption>
                 </div>
                 <div data-index="12">
                     <img src="./images/img-12.jpeg" />
@@ -270,7 +270,6 @@
             var marker = new google.maps.Marker({
                 position: coords,
                 map: map,
-                title: 'Hello World!'
             });
 
         }
@@ -285,7 +284,7 @@
 
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAn58_jo1Du-eYVLR2zGa1yHYv3KitsZdQ&callback=initMap"
         async defer></script>
-    <script type="text/javascript" src="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick.min.js"></script>
 
 
     <script>
@@ -317,26 +316,20 @@
                 ]
             });
 
-            //remove active class from all thumbnail slides
             $('.slider-nav-thumbnails .slick-slide').removeClass('slick-active');
 
-            //set active class to first thumbnail slides
             $('.slider-nav-thumbnails .slick-slide').eq(0).addClass('slick-active');
 
-            // On before slide change match active thumbnail to current slide
             $('.slider').on('beforeChange', function (event, slick, currentSlide, nextSlide) {
                 var mySlideNumber = nextSlide;
                 $('.slider-nav-thumbnails .slick-slide').removeClass('slick-active');
                 $('.slider-nav-thumbnails .slick-slide').eq(mySlideNumber).addClass('slick-active');
             });
 
-            //UPDATED 
-
             $('.slider').on('afterChange', function (event, slick, currentSlide) {
                 $('.content').hide();
                 $('.content[data-id=' + (currentSlide + 1) + ']').show();
             });
-
 
         });
     </script>
