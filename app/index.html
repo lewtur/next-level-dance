@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="Next Level Dance is an established dance school based in Burnley. We provide quality dance training in various different styles for all ages and abilities.">
-    <meta name="keywords" content="next,level,dance,school,studio,burnley,performance">
+    <meta name="keywords" content="next,level,dance,school,studio,burnley,performance,north west,lancashire">
 
     <title>Next Level Dance | Award winning dance school based in the North West</title>
 
@@ -39,7 +39,7 @@
         </div>
     </div>
 
-    <nav class="navbar navbar-expand-lg fixed-top navbar-at-top" id="main-nav">
+    <nav class="navbar navbar-expand-lg bg-transparent fixed-top navbar-dark navbar-at-top" id="main-nav">
         <a class="navbar-brand" href="#intro">Next Level Dance</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-supported-content"
             aria-controls="navbar-supported-content" aria-expanded="false" aria-label="Toggle navigation">
@@ -203,9 +203,13 @@
                 by
                 emailing <a href="mailto:lucynextleveldance@gmail.com" target="_blank">lucynextleveldance@gmail.com</a>.
             </p>
-            <p>
-                Pictures coming soon!
-            </p>
+            <div class="slider-hire text-center">
+                <div> <img src="./images/studio-1.jpeg"></div>
+                <div> <img src="./images/studio-2.jpeg"></div>
+                <div> <img src="./images/studio-3.jpeg"></div>
+                <div> <img src="./images/studio-4.jpeg"></div>
+                <div> <img src="./images/studio-5.jpeg"></div>
+            </div>
         </div>
     </section>
 
@@ -298,7 +302,7 @@
                 asNavFor: '.slider-nav-thumbnails',
                 adaptiveHeight: true,
                 autoplay: true,
-  autoplaySpeed: 2000,
+                autoplaySpeed: 2000,
             });
 
             $('.slider-nav-thumbnails').slick({
@@ -316,6 +320,8 @@
                     },
                 ]
             });
+
+            $('.slider-hire').slick();
 
             $('.slider-nav-thumbnails .slick-slide').removeClass('slick-active');
 

@@ -5,6 +5,12 @@
   transition: 0.3s ease-out;
 }
 
+@media (max-width: 576px) {
+  .navbar-scrolled-down {
+    top: 18px!important;
+  }
+}
+
 .navbar-at-top {
   padding-top: 1rem;
   padding-bottom: 1rem;
@@ -41,6 +47,6 @@
 
 @media (max-width: 991px) {
   .navbar.bg-transparent {
-    background-color: $background-color-3 !important; //yuk
+    background-color: $background-color-3 !important;
   }
 }

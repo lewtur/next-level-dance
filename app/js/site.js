@@ -1,4 +1,4 @@
-$("#copyright-year").text(new Date().getFullYear());
+var scroll = 0;
 
 $(window).on("load", function() {
   $("#loading-status").fadeOut();
@@ -31,4 +31,12 @@ $(window).scroll(function() {
       .removeClass("navbar-light bg-light navbar-scrolled")
       .addClass("navbar-dark bg-transparent navbar-at-top");
   }
+
+  if (scroll < $(this).scrollTop()) {
+    $(".navbar").addClass("navbar-scrolled-down");
+  } else {
+    $(".navbar").removeClass("navbar-scrolled-down");
+  }
+
+  scroll = $(this).scrollTop();
 });

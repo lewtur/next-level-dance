@@ -1,1 +1,20 @@
 @import "branding";
+
+.hire-section {
+    img {
+        max-height: 400px;
+        max-width: 100%;
+        margin: auto;
+    }
+
+
+    .slick-prev:before,
+    .slick-next:before {
+        color: black;
+    }
+
+    .slick-slider {
+        max-width: 80%;
+        margin: auto;
+    }
+}
