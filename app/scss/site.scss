@@ -57,3 +57,8 @@ p {
 section a {
   color: $color-primary;
 }
+
+.dark-link {
+  color: black !important;
+  text-decoration: underline;
+}

@@ -3,3 +3,13 @@
 .about-section {
     background-color: $color-primary;
 }
+
+iframe {
+    width: 100%;
+    height: 480px;
+    padding-bottom: 2rem;
+
+    @media (max-width: 576px) {
+        height: 320px;
+    }
+}
