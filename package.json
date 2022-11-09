@@ -27,6 +27,6 @@
     "run-sequence": "^2.2.1"
   },
   "dependencies": {
-    "natives": "^1.1.4"
+    "natives": "^1.1.6"
   }
 }
